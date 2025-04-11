@@ -88,13 +88,13 @@
         </li>
       </ul>
       <p class="button-row" align="center">
-        <esp-web-install-button class="invisible"></esp-web-install-button>
+        <esp-web-install-button manifest="/manifest_.json"></esp-web-install-button>
       </p>
 
       <div class="footer">
         Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a>.
     </div>
-    <script>
+<!--     <script>
       document.querySelectorAll('input[name="type"]').forEach(radio =>
         radio.addEventListener("change", () => {
           const button = document.querySelector('esp-web-install-button');
@@ -102,6 +102,6 @@
           button.classList.remove('invisible');
         }
       ));
-    </script>
+    </script> -->
   </body>
 </html>
