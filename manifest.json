@@ -1,0 +1,17 @@
+{
+  "name": "SolarBeat ESP32 Firmware Flasher",
+  "description": "Flashing firmware for SolarBeat ESP32 devices.",
+  "version": "1.06",
+  "funding_url": "https://esphome.io/guides/supporters.html",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "firmware/chisage_esp32.ino.bootloader.bin",         "offset": 4096 },
+        { "path": "firmware/chisage_esp32.ino.partition.bin",    "offset": 32768 },
+        { "path": "firmware/ota_data_initial.bin",   "offset": 53248 },
+        { "path": "firmware/chisage_esp32.ino.bin",               "offset": 65536 }
+      ]
+    }
+  ]
+}
